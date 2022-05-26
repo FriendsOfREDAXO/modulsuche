@@ -1,0 +1,21 @@
+# addon:mf_modulsuche de_de
+mf_modulsuche_start = Info
+mf_modulsuche_information = Information
+mf_modulsuche_title = Modulsuche
+mf_modulsuche_files = Dateien
+mf_modulsuche_configuration = Konfiguration
+mf_modulsuche_settings = Einstellungen
+mf_modulsuche_limit = Suchoption anzeigen ab wie vielen verfügbaren Modulen?
+mf_modulsuche_search = Modulsuche in Blockauswahl
+mf_modulsuche_display_type = Darstellungsart
+mf_modulsuche_display_type_extended = Erweiterte Ansicht in Modulauswahl
+mf_modulsuche_display_type_extended_label = Aktivieren
+mf_modulsuche_module = Module
+mf_modulsuche_module_detail_view = Modul-Details
+mf_modulsuche_available_modules = Verfügbare Module
+mf_modulsuche_id = ID
+mf_modulsuche_name = Name
+mf_modulsuche_module_thumbnail = Vorschaubild in Modulauswahl
+mf_modulsuche_module_description = Kurze Beschreibung
+mf_modulsuche_edit = Bearbeiten
+mf_modulsuche_module_edit = Modulinformationen bearbeiten

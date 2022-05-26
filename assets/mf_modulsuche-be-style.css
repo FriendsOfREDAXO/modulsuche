@@ -1,0 +1,22 @@
+.rex-slice-select .filter-option-inner-inner{
+    text-align: center;
+    font-weight: bold;
+}
+
+.rex-slice-select .extended-view a{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.rex-slice-select .extended-view .text img{
+    border-radius: 10px;
+    margin-right: 15px;
+    height: 100px;
+    width: 100px;
+}
+.rex-slice-select .extended-view .text{
+    font-size: 1.2em;
+}
+.rex-slice-select .extended-view .dropdown-menu .divider {
+    margin: 0 !important;
+}

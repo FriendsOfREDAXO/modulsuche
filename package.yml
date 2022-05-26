@@ -1,0 +1,24 @@
+# Alle hier gesetzten Werte können über $addon->getProperty($key) abgefragt werden
+
+package: mf_modulsuche
+version: '1.0'
+author: 'Daniel Springer | Medienfeuer'
+compile: 0
+supportpage: https://github.com/danspringer/mf_modulsuche
+
+page:
+  title: 'Modulsuche'
+  perm: mf_modulsuche[]
+  pjax: true
+  icon: rex-icon fa fa-search
+  subpages:
+    start: { title: 'translate:mf_modulsuche_start', subPath: README.md  } # config-Seite mit separaten Rechten
+    config: { title: 'translate:mf_modulsuche_configuration' }
+
+load: late
+
+requires:
+    packages:
+      structure: '>=2.0'
+    
+    redaxo: '>=5.0'
