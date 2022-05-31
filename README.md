@@ -1,5 +1,5 @@
 # Modulsuche und Modulvorschau für REDAXO 5
-Dieses AddOn ermöglicht die Suche nach Modulnamen, wenn man einen Block/Slice hinzufügt.
+Dieses AddOn ermöglicht die Suche nach Modulnamen, wenn man einen Block hinzufügt.
 
 ![splashscreen](https://user-images.githubusercontent.com/16903055/170566732-9e0f6b68-5af2-4421-8be0-fa159dc684f6.png)
 
