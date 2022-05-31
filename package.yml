@@ -1,19 +1,20 @@
 # Alle hier gesetzten Werte können über $addon->getProperty($key) abgefragt werden
 
 package: mf_modulsuche
-version: '1.1'
+version: '1.2'
 author: 'Daniel Springer | Medienfeuer'
 compile: 0
 supportpage: https://github.com/danspringer/mf_modulsuche
 
-page:
-  title: 'Modulsuche'
-  perm: mf_modulsuche[]
-  pjax: true
-  icon: rex-icon fa fa-search
-  subpages:
-    start: { title: 'translate:mf_modulsuche_start', subPath: README.md  } # config-Seite mit separaten Rechten
-    config: { title: 'translate:mf_modulsuche_configuration' }
+pages:
+  modules/mf_modulsuche:
+    title: translate:title
+    perm: mf_modulsuche[]
+    pjax: true
+    #icon: rex-icon fa fa-search
+    subpages:
+      config: { title: 'translate:mf_modulsuche_configuration' }
+      start: { title: 'translate:mf_modulsuche_start', subPath: README.md  } # config-Seite mit separaten Rechten
 
 load: late
 

@@ -10,3 +10,4 @@ modules.xml
 .idea/encodings.xml
 *.ipr
 .DS_Store
+/.idea/.name
