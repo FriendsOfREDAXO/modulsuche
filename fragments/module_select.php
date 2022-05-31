@@ -1,11 +1,15 @@
 <?php
+/*
+ * Modulsuche fuer REDAXO 5
+ * Author: Daniel Springer
+ */
 
-// Erweiterte Ansicht - "Von Hand" die Liste zusammenbauen, da rex_select nciht die Custom-Möglichkeiten für HTML-bietet
-if(rex_addon::get('mf_modulsuche')->getConfig('display_extended') === '|1|') {
+// Erweiterte Ansicht - "Von Hand" die Liste zusammenbauen, da rex_select nicht die Custom-Möglichkeiten für HTML-bietet
+if(rex_addon::get('modulsuche')->getConfig('display_extended') === '|1|') {
     #dump($this);
 
     $liveSearch = '';
-    if (count($this->items) > rex_addon::get('mf_modulsuche')->getConfig('limit')) {
+    if (count($this->items) > rex_addon::get('modulsuche')->getConfig('limit')) {
         $liveSearch = ' data-live-search="true"';
     }
     $select = '<select name="standard" size="1" class="form-control selectpicker extended-view" onchange="window.location = this.options[this.selectedIndex].value;"'.$liveSearch.'>';
@@ -20,15 +24,15 @@ if(rex_addon::get('mf_modulsuche')->getConfig('display_extended') === '|1|') {
         $sql->setWhere(['id'=>$item['id']]);
         $sql->select();
 
-        $fileUrl = rex_url::addonAssets('mf_modulsuche','modulthumbnail_platzhalter.jpg');
-        if($sql->getValue('mf_modulsuche_module_thumbnail') !== '') {
-            $fileUrl = '/media/mf_modulsuche_thumbnail/'.$sql->getValue('mf_modulsuche_module_thumbnail');
+        $fileUrl = rex_url::addonAssets('modulsuche','modulthumbnail_platzhalter.jpg');
+        if($sql->getValue('modulsuche_module_thumbnail') !== '') {
+            $fileUrl = '/media/modulsuche_thumbnail/'.$sql->getValue('modulsuche_module_thumbnail');
         }
-        $thumbnail = '<img src=\''.$fileUrl.'\' alt=\'Thumbnail '.$sql->getValue('mf_modulsuche_module_thumbnail').'\'>';
+        $thumbnail = '<img src=\''.$fileUrl.'\' alt=\'Thumbnail '.$sql->getValue('modulsuche_module_thumbnail').'\'>';
 
         $description = '';
-        if($sql->getValue('mf_modulsuche_module_description') !== '') {
-            $description = ' <span class=\'text-muted\'><small>'.$sql->getValue('mf_modulsuche_module_description').'</small></span>';
+        if($sql->getValue('modulsuche_module_description') !== '') {
+            $description = ' <span class=\'text-muted\'><small>'.$sql->getValue('modulsuche_module_description').'</small></span>';
         }
 
         $select .=
@@ -61,7 +65,7 @@ else {
     $select->setAttribute('class', 'form-control selectpicker');
     $select->setAttribute('onchange', 'window.location = this.options[this.selectedIndex].value;');
 
-    if (count($this->items) > rex_addon::get('mf_modulsuche')->getConfig('limit')) {
+    if (count($this->items) > rex_addon::get('modulsuche')->getConfig('limit')) {
         $select->setAttribute('data-live-search', 'true');
     }
     $select = $select->get();

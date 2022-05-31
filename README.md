@@ -13,4 +13,6 @@ Optional kann man Screenshots als Vorschaubilder in der Modulauswahl hinterlegen
 - Frei wählbare Anzahl ab welcher die Suche aktiviert wird
 - Optionale Detailansicht inkl. frei definierbarem Vorschau-Thumbnail und Beschreibung der Module
 
-Bugs oder Anregungen: [https://github.com/danspringer/mf_modulsuche](https://github.com/danspringer/mf_modulsuche)
+Bugs oder Anregungen: [https://github.com/friendsofredaxo/modulsuche](https://github.com/friendsofredaxo/modulsuche)
+
+Projekt-Lead: [Daniel Springer](https://github.com/friendsofredaxo/modulsuche)
