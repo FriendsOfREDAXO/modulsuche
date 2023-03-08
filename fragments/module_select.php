@@ -118,7 +118,7 @@ else {
     // Wenn bloecks installiert ist
     if($bloecks){
         $clipBoardContents = modulsuche::getClipboardContents();
-        if($clipBoardContents['action'] === "copy" || $clipBoardContents['action'] === "cut") {
+        if(isset($clipBoardContents['action']) && ($clipBoardContents['action'] === "copy" || $clipBoardContents['action'] === "cut")) {
             $sliceDetails = modulsuche::getSliceDetails($clipBoardContents['slice_id'], $clipBoardContents['clang']);
             $context->setParam('source_slice_id', $clipBoardContents['slice_id']);
             if ($sliceDetails['article_id']) {
